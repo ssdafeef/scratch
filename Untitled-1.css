@@ -1,0 +1,9 @@
+.my{
+    width:77vh;
+}
+.top{
+    display: flex;
+    background-color: aqua;
+    padding: 50px;
+    margin: 50px;
+}
