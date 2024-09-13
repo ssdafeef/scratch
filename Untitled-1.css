@@ -4,8 +4,7 @@ body{
 }
 
 .top-box {
-    display: flex;
-    flex-grow: 1;
+    flex-wrap: 1;
     background-color: #a7a69e;
     width: 100%;
     height: 10vh;
@@ -13,18 +12,85 @@ body{
 }
 
  .mid{
-        display: flex;
-        flex-grow: 1;
-        /* border: aqua solid 2px; */
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: repeat(10,100px);
+        margin-top: 1%;
+        gap: 1% 1%;
  }
 .qoute-box{
+    background-color: #a7a69e;
+    border-radius: 10px;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 1 ;
+    grid-column-end: 5;
+}
+.potrait{
+    background-color: #a7a69e;
+    border-radius: 10px;
+    grid-row-start:1 ;
+    grid-row-end: 5;
+    grid-column-start: 5 ;
+    grid-column-end: 8;
+}
+.cert{
+    background-color: #a7a69e;
+    border-radius: 10px;
+    grid-row-start:1 ;
+    grid-row-end: 6;
+    grid-column-start: 8;
+    grid-column-end: 11;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .qoute-box{
     display: flex;
     justify-content: center;
     background-color: #a7a69e;
     width:38%;
     height: 55vh;
     border-radius: 10px;
-    margin-top: 1%;
+    margin-top: 4%;
+    
+    grid-row-start:1 ;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .potrait{
@@ -33,13 +99,16 @@ body{
     justify-content: center;
     background-color: #a7a69e;
     width:27%;
+    
     height: 55vh;
+    grid-column-start: 4;
+    grid-row-start:1;
+    grid-column-end:6;
+    grid-row-end:7;
     border-radius: 10px;
-    margin-top: 1%;
-    margin-left: 1%;
+    margin-top: 10px;
 }
-
-.cert{
+ .cert{
     display: flex;
     flex-grow: 1;
     justify-content: center;
@@ -47,18 +116,18 @@ body{
     width:32%;
     height: 70vh;
     border-radius: 10px;
-    margin-top: 1%;
-    margin-left: 1%;
+    grid-column-start: 3;
+    grid-row-start:1;
+    grid-row-end:7;
+    margin-top: 10px;
 }
-
 .abt-me{
     display: flex;
     flex-grow: 1;
-    justify-content: center;
     background-color: #a7a69e;
     width:32%;
     height: 70vh;
     border-radius: 10px;
-    margin-top: -14.1vh;
+    margin-top: 10px;
 }
-  
+    */
