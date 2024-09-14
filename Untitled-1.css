@@ -4,45 +4,19 @@ body{
 }
 
 .top-box {
-    display: flex;
+    flex-wrap: 1;
     background-color: #a7a69e;
     width: 100%;
     height: 10vh;
     border-radius: 10px ;
-    border: aqua solid 1px;
-}
-.afeef {
-    display: flex;
-    border-radius: 10px;
-    width: 5%;
-    height: 9.7vh;
-    justify-content: center;
-    align-items: center;
-    font-family: "Playwrite DK Loopet",cursive;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    margin-left: 10px;
-}
-.ahmed {
-    display: flex;
-    border-radius: 10px;
-    height: 9.7vh;
-    justify-content: center;
-    align-items: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-size:21px ;
-
-
 }
 
  .mid{
-    display: grid;
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(10,100px);
-    margin-top: 1%; 
-    gap: 1% 1%;
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: repeat(10,100px);
+        margin-top: 1%;
+        gap: 1% 1%;
  }
 .qoute-box{
     background-color: #a7a69e;
@@ -68,27 +42,92 @@ body{
     grid-column-start: 8;
     grid-column-end: 11;
 }
-.abt-me{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .qoute-box{
+    display: flex;
+    justify-content: center;
     background-color: #a7a69e;
+    width:38%;
+    height: 55vh;
     border-radius: 10px;
-    grid-row-start:5 ;
+    margin-top: 4%;
+    
+    grid-row-start:1 ;
     grid-row-end: 7;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
 }
-.self{
+
+.potrait{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
     background-color: #a7a69e;
-    border-radius: 10px;
-    grid-row-start:5 ;
-    grid-row-end: 7;
+    width:27%;
+    
+    height: 55vh;
     grid-column-start: 4;
-    grid-column-end: 8;
-}
-.contact{
-    background-color: #a7a69e;
+    grid-row-start:1;
+    grid-column-end:6;
+    grid-row-end:7;
     border-radius: 10px;
-    grid-row-start:6;
-    grid-row-end: 7;
-    grid-column-start:8 ;
-    grid-column-end:11 ;
+    margin-top: 10px;
 }
+ .cert{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    background-color: #a7a69e;
+    width:32%;
+    height: 70vh;
+    border-radius: 10px;
+    grid-column-start: 3;
+    grid-row-start:1;
+    grid-row-end:7;
+    margin-top: 10px;
+}
+.abt-me{
+    display: flex;
+    flex-grow: 1;
+    background-color: #a7a69e;
+    width:32%;
+    height: 70vh;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+    */
