@@ -26,6 +26,14 @@ body{
     grid-column-start: 1 ;
     grid-column-end: 5;
 }
+.flwr-pht{
+    display: flex;
+    justify-content: end;
+    margin-top: 3%;
+    margin-right: 3%;
+    width: auto;
+    height:auto;
+}
 .potrait{
     background-color: #a7a69e;
     border-radius: 10px;
@@ -72,7 +80,7 @@ body{
     display: grid;
     width: auto;
     grid-template-columns: repeat(3,1fr);
-    column-gap: 9%;
+    column-gap: 30px;
     justify-content: space-between;
     margin-left: auto;
     margin-right: 2%;
