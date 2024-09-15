@@ -38,12 +38,10 @@ body{
     width: auto;
     height:auto;
     /* border-radius: 40px; */
-    background-color: aliceblue;
 }
-.flwr-pht:hover{
+/* .flwr-pht{
     cursor:pointer;
-    animation:rotate 0.8s linear 0s infinite;
-    color: white;
+    animation:rotate 8s linear 0s infinite;
   }
   @keyframes rotate {
     from{
@@ -52,7 +50,7 @@ body{
     to{
       transform: rotate(360deg);
     }
-  }
+  } */
 .txt1 {
     display: flex;
     justify-content: left;
@@ -76,6 +74,17 @@ body{
     grid-row-end: 6;
     grid-column-start: 8;
     grid-column-end: 11;
+}
+.topc{
+    display: flex;
+    border: aqua solid 1px;
+    border-radius: 10px;
+    width: auto;
+    height:auto;
+}
+.imgc{
+    border: aqua solid 2px;
+    height: 100px;
 }
 .self{
     background-color: #a7a69e;
