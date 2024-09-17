@@ -3,7 +3,7 @@ document.addEventListener('mousemove', function(e) {
     fluidTrail.classList.add('fluid-trail');
     
     // Random size for variation in fluid effect
-    const size = Math.random() * 25 + 12;
+    const size = Math.random() * 25 + 10;
     fluidTrail.style.width = `${size}px`;
     fluidTrail.style.height = `${size}px`;
     
