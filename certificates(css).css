@@ -1,19 +1,24 @@
 body{
-    background-image: linear-gradient(to top right, #a7a69e, #a7a69e);
+    background-image: linear-gradient(to top right, #797871, #8b8a83);
     min-height: 100vh;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: monospace;
-    
+    overflow: hidden;
+
+
 }
 .slider{
     position: relative;
     margin-top: 100px;
     width: 100%;
-    height: 370px;
+    height: 400px;
     overflow: hidden;
+    zoom: 1.4;
+    margin-bottom: 90px;
+   
 }
 .item{
     position: absolute;
@@ -24,17 +29,20 @@ body{
     border-radius: 10px;
     /* padding: 20px; */
     transition:  0.5s;
-    left: calc(50% - 110px);
+    left: calc(50% - 220px);
     top: 0;
+    margin-top: 2%;
+    box-shadow: 3px 6px 10px 3px rgba(0, 0, 0, 0.779) ;
 }
 #next{
     position: absolute;
-    right: 50px;
+    right:2%;
     top: 40%;
+    
 }
 #prev{
     position: absolute;
-    left: 50px;
+    left: 2%;
     top: 40%;
 }
 #prev, #next{
@@ -46,9 +54,36 @@ body{
     font-weight: bold;
     opacity: 0.5;
     transition: opacity 0.5s;
+    
+
 }
 #prev:hover,
 #next:hover{
     opacity: 1;
+    
+}
+body {
+    overflow: hidden;
+    cursor: auto; /* Hide default cursor */
 }
 
+.fluid-trail {
+    position: absolute;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    border-radius: 50%;
+    pointer-events: none;
+    animation: fluidFade 2.5s ease-out forwards;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1), 0 0 40px rgba(255, 255, 255, 0.05);
+    mix-blend-mode: overlay;
+}
+
+@keyframes fluidFade {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
