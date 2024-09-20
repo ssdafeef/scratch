@@ -25,9 +25,6 @@ body {
     }
 }
 
-
-
-
 .top-box {
     display: flex;
     background-color: #a7a69e;
@@ -378,6 +375,7 @@ body {
     align-self: center;
     justify-content: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 .projects:hover{
     cursor: pointer;
@@ -388,6 +386,8 @@ body {
     align-self: center;
     justify-content: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    text-decoration:none;
 }
 .about:hover{
     cursor: pointer;
@@ -411,16 +411,23 @@ body {
     grid-column-start: 1;
     grid-column-end: 4;
 }
+.explain{
+    width: 300px;
+}
 .tops{
-    border-radius: 10px;
-    width: 2.2rem;
-    height: auto;
-    font-size: 2.9rem;
-    margin-left: 2.5%;
-    margin-top: 0%; 
+    display: flex;
+   
+   
 }
 #star{
    margin-top: 0%;
+   border-radius: 10px;
+   width: 2.2rem;
+   height: auto;
+   font-size: 2.9rem;
+   margin-left: 2.5%;
+   margin-top: 0%; 
+ 
 
 
         animation:rotate1 8s linear 0s infinite;
@@ -433,3 +440,10 @@ body {
         transform: rotate(360deg);
         }
     }
+.explain{
+    display: flex;
+    justify-content: end;
+    font-size: 1.2rem;
+    border: 1px solid aqua;
+    
+}

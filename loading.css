@@ -65,3 +65,32 @@ html {
   .loader span:nth-child(7) {
     animation-delay:0.90s;
   }
+  /* HTML: <div class="loader"></div> */
+.loaders {
+  display: inline-flex;
+  border: 1.5px solid #787770;
+  border-radius: 5px;
+  margin-top: 9.2%;
+}
+.loaders::before,
+.loaders::after {
+  content: "0 1 2 3 4 5 6 7 8 9 ✓";
+  font-size: 30px;
+  font-family: monospace;
+  font-weight: bold;
+  line-height: 1em;
+  height: 1em;
+  width: 1.2ch;
+  text-align: center;
+  outline:0px solid #0000009f;
+  color: #0000;
+  text-shadow:0 0 0 #00000096;
+  overflow: hidden; 
+  animation: l4 2s forwards linear;
+}
+.loaders::before {
+  animation-duration: 1.2s;
+}
+@keyframes l4 {
+  100% {text-shadow:0 var(--t,-10em) 0 #53524f}
+}

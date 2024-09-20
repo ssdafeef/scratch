@@ -23,6 +23,7 @@ function loadShow(){
         items[i].style.filter = 'blur(5px)';
         items[i].style.opacity = stt > 2 ? 0 : 0.6;
     }
+    
 }
 
 
