@@ -68,9 +68,10 @@ html {
   /* HTML: <div class="loader"></div> */
 .loaders {
   display: inline-flex;
-  border: 1.5px solid #787770;
+  border: 3px solid #787770;
   border-radius: 5px;
-  margin-top: 9.2%;
+  margin-top: 5%;
+  margin-left: 49%;
 }
 .loaders::before,
 .loaders::after {
@@ -82,9 +83,9 @@ html {
   height: 1em;
   width: 1.2ch;
   text-align: center;
-  outline:0px solid #0000009f;
-  color: #0000;
-  text-shadow:0 0 0 #00000096;
+  outline:0px solid #787770;
+  color: #78777000;
+  text-shadow:0 0 0 #787770;
   overflow: hidden; 
   animation: l4 2s forwards linear;
 }
@@ -92,5 +93,5 @@ html {
   animation-duration: 1.2s;
 }
 @keyframes l4 {
-  100% {text-shadow:0 var(--t,-10em) 0 #53524f}
+  100% {text-shadow:0 var(--t,-10em) 0 #787770}
 }
