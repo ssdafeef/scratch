@@ -44,9 +44,9 @@ body{
     display: flex;
     border-radius: 10px;
     width: 200px;
-    margin-left: -111px;
+    margin-left: -66%;
     opacity: 0;
-    height: 9.7vh;
+    height: auto;
     justify-content: center;
     align-items: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
@@ -55,16 +55,17 @@ body{
 }   
     .move:hover{
         animation: slide 1s ease-in-out 0s forwards ;
+        cursor: default;
         
     }
     @keyframes slide {
         from{
             opacity: 0;
-            margin-left: -111px;
+            margin-left: -66%;
         }
         to{
             opacity: 1;
-            margin-left: -120px;
+            margin-left: -58.7%;
         }
     }
 .three{
@@ -185,7 +186,6 @@ main{
 }
 #imagecertificate{
     width: 95%;
-     /* justify-content: center; */
     height: auto ;
     margin-top: 5%;
     margin-left: 2.5%;
@@ -193,9 +193,9 @@ main{
    
  }
  #pot{ 
-    width: 100%; /* Make the image width 100% of its parent */
-    height: 100%; /* Make the image height 100% of its parent */
-    object-fit: cover; /* Make the image cover the entire parent area */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
     border-radius: 10px;
         object-position: 0% 13%;
 }
@@ -241,7 +241,6 @@ main{
     width: auto;
     height:auto;
     font-size: 1.7rem;
-    /* margin-top:10%; */   
     margin-left: 3%;
     margin-top: 6%;
 
@@ -431,6 +430,56 @@ footer{
         color: black;
         text-decoration: none;
     }
+    .navt{
+        background: #a7a69e;
+        grid-area:navt;
+        justify-content: space-between;
+        display: flex;
+       border-radius: 10px;
+       width: auto;
+       height: 100px;
+    
+    }
+    .three{
+        display: flex;
+        justify-content: flex-end;
+        width: 400px;
+        align-items: center;
+        justify-content: space-around;
+    } 
+    .projects{
+        display: flex;
+        width: auto;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size:1.3rem;
+    }
+    .projects:hover{
+        cursor: pointer;
+    }
+    .about{
+        display: flex;
+        width: auto;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+        text-decoration:none;
+        font-size:1.3rem;
+
+    }
+    .about:hover{
+        cursor: pointer;}
+    
+    .cnt{
+        display: flex;
+        width: auto;
+        align-self: center;
+        justify-content: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size:1.3rem;
+
+    }
+    .cnt:hover{
+        cursor: pointer;
+    }
     #arrw{
         display: flex; 
         border-radius: 10px;
@@ -449,7 +498,6 @@ footer{
 
     #imagecertificate{
         width: 95%;
-         /* justify-content: center; */
         height: auto ;
         margin-top: 2%;
         margin-left: 2.5%;
@@ -496,7 +544,6 @@ footer{
         width: auto;
         height:auto;
         font-size: 2.5rem;
-        /* margin-top:10%; */   
         margin-left: 3%;
         margin-top: 6%;
     
@@ -597,4 +644,4 @@ footer{
     .lind:hover{
         cursor: pointer;
     }
-}
+} 

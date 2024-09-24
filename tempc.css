@@ -1,4 +1,4 @@
-body{
+/* body{
     background-color: rgb(0, 0, 0);
    overflow: hidden;
 }
@@ -185,7 +185,6 @@ main{
 }
 #imagecertificate{
     width: 95%;
-     /* justify-content: center; */
     height: auto ;
     margin-top: 5%;
     margin-left: 2.5%;
@@ -193,9 +192,9 @@ main{
    
  }
  #pot{ 
-    width: 100%; /* Make the image width 100% of its parent */
-    height: 100%; /* Make the image height 100% of its parent */
-    object-fit: cover; /* Make the image cover the entire parent area */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
     border-radius: 10px;
         object-position: 0% 13%;
 }
@@ -241,7 +240,6 @@ main{
     width: auto;
     height:auto;
     font-size: 1.7rem;
-    /* margin-top:10%; */   
     margin-left: 3%;
     margin-top: 6%;
 
@@ -449,7 +447,6 @@ footer{
 
     #imagecertificate{
         width: 95%;
-         /* justify-content: center; */
         height: auto ;
         margin-top: 2%;
         margin-left: 2.5%;
@@ -496,7 +493,6 @@ footer{
         width: auto;
         height:auto;
         font-size: 2.5rem;
-        /* margin-top:10%; */   
         margin-left: 3%;
         margin-top: 6%;
     
@@ -597,4 +593,4 @@ footer{
     .lind:hover{
         cursor: pointer;
     }
-}
+} */
