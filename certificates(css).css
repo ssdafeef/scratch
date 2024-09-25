@@ -87,3 +87,14 @@ body {
         opacity: 0;
     }
 }
+@media only screen and (max-width:1080px) {
+    .slider{
+        position: relative;
+        margin-top: 100px;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        zoom: none;
+        margin-bottom: 90px;
+    }
+}

@@ -29,45 +29,45 @@ body{
 
 }
 
-.afeef {
-    display: flex;
-    border-radius: 10px;
-    margin-left: 2%;
-    width: auto;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
-    font-size: 1.2rem;
-}
-.move{
-    display: flex;
-    border-radius: 10px;
-    width: 200px;
-    margin-left: -66%;
-    opacity: 0;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
-    font-size: 1.2rem;
+    .afeef {
+        display: flex;
+        border-radius: 10px;
+        margin-left: 2%;
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+        font-size: 1.2rem;
+    }
+    .move{
+        display: flex;
+        border-radius: 10px;
+        width: 200px;
+        margin-left: -66%;
+        opacity: 0;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+        font-size: 1.2rem;
 
-}   
-    .move:hover{
-        animation: slide 1s ease-in-out 0s forwards ;
-        cursor: default;
-        
-    }
-    @keyframes slide {
-        from{
-            opacity: 0;
-            margin-left: -66%;
+    }   
+        .move:hover{
+            animation: slide 1s ease-in-out 0s forwards ;
+            cursor: default;
+            
         }
-        to{
-            opacity: 1;
-            margin-left: -58.7%;
+        @keyframes slide {
+            from{
+                opacity: 0;
+                margin-left: -66%;
+            }
+            to{
+                opacity: 1;
+                margin-left: -58.7%;
+            }
         }
-    }
 .three{
     display: flex;
     justify-content: flex-end;
@@ -395,12 +395,45 @@ footer{
 .lind:hover{
     cursor: pointer;
 }
+.fluid-trail {
+    position: absolute;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    border-radius: 50%;
+    pointer-events: none;
+    animation: fluidFade 2.5s ease-out forwards;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1), 0 0 40px rgba(255, 255, 255, 0.05);
+    mix-blend-mode: overlay;
+}
 
-
+@keyframes fluidFade {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }}
+.nlyscr{
+    opacity: 0;
+    }
+    #video-certificate {
+        width: 100%; /* make the video width equal to its parent container */
+        height: 100%; /* make the video height equal to its parent container */
+        object-fit: cover; /* scale the video to fit inside the container */
+        border-radius: 10px; /* add a border radius to match the box */
+        margin: 0; /* remove the margin */
+        padding: 0; /* remove the padding */
+        /* Add these new styles */
+        object-position:top; /* position the video at the top of the container */
+        overflow: hidden; /* hide any overflow to prevent the video from being cut off */
+      }
 
 @media only screen and (max-width:1080px) {
     body{
-        overflow: auto;
+        overflow-y: auto;
+        margin-left:1.5% ;
+        margin-right: 1.5%;
     }
     .whole{
         grid-template-columns: 1fr;
@@ -440,6 +473,41 @@ footer{
        height: 100px;
     
     }
+    .afeef {
+        opacity: 0;
+        /* display: flex;
+        border-radius: 10px;
+        margin-left: 2%;
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+        font-size: 1.2rem; */
+    }
+    .nlyscr{
+        opacity: 1;
+        z-index: 3;
+        display: flex;
+        border-radius: 10px;
+        margin-right:22%;
+        width: auto;
+        height: auto;
+        justify-content: start;
+        align-items: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+        font-size: 1.2rem;
+        }
+    /* .move{
+        display: flex;
+        border-radius: 10px;
+        width: auto;
+        margin-left: -40%;
+        opacity: 1;
+        height: auto;
+        align-items: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+        font-size: 1.2rem;} */
     .three{
         display: flex;
         justify-content: flex-end;
