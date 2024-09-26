@@ -76,3 +76,37 @@ document.addEventListener('mousemove', function(e) {
         fluidTrail.remove();
     }, 2500);
 });
+// ... (rest of the code remains the same)
+
+// Add swipe gesture support
+let touchStartX = 0;
+let touchStartY = 0;
+let touchEndX = 0;
+let touchEndY = 0;
+
+document.addEventListener('touchstart', function(event) {
+  touchStartX = event.touches[0].pageX;
+  touchStartY = event.touches[0].pageY;
+});
+
+document.addEventListener('touchmove', function(event) {
+  touchEndX = event.touches[0].pageX;
+  touchEndY = event.touches[0].pageY;
+});
+
+document.addEventListener('touchend', function(event) {
+  const deltaX = touchEndX - touchStartX;
+  const deltaY = touchEndY - touchStartY;
+
+  if (Math.abs(deltaX) > Math.abs(deltaY)) {
+    // Swipe gesture detected
+    if (deltaX > 50) {
+      // Swipe right
+      active = active - 1 >= 0 ? active - 1 : active;
+    } else if (deltaX < -50) {
+      // Swipe left
+      active = active + 1 < items.length ? active + 1 : active;
+    }
+    loadShow();
+  }
+});
