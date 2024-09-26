@@ -15,6 +15,19 @@ document.addEventListener('mousemove', function(e) {
     
     // Remove the fluid trail after the animation finishes
     setTimeout(() => {
-        fluidTrail.remove();
+        fluidTrail.remove();const headSpace = document.getElementById('head-space');
+
+document.addEventListener('mousemove', (e) => {
+  const mouseX = e.clientX;
+  const mouseY = e.clientY;
+  const centerX = window.innerWidth / 2;
+  const centerY = window.innerHeight / 2;
+  const distanceX = mouseX - centerX;
+  const distanceY = mouseY - centerY;
+  const angleX = distanceX * 0.01;
+  const angleY = distanceY * 0.01;
+
+  headSpace.style.transform = `perspective(1000px) rotateX(${angleY}deg) rotateY(${angleX}deg)`;
+});     
     }, 2500);
 });

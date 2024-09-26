@@ -1,3 +1,4 @@
+
 let items = document.querySelectorAll('.slider .item');
 let active = 3;
 
