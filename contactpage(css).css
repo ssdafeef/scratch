@@ -1,10 +1,11 @@
 body{
     background-color:black;
+    overflow: hidden;
 }
 
 .all{
     display: grid;
-    height: 100vh;
+    height: 97.9vh;
     grid-gap: 11px;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr ;
     grid-template-rows: auto 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
@@ -98,6 +99,7 @@ width: auto;
 align-self: center;
 justify-content: center;
 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-decoration: line-through;
 }
 .cnt:hover{
 cursor: pointer;
@@ -117,19 +119,20 @@ cursor: pointer;
     ;
 }
 .get{
-    background: #0bcd5f;
+    background: #a7a69e;
     grid-area:get;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-
+    font-family:Georgia, 'Times New Roman', Times, serif ;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     width: auto;
-    font-size: 10rem;
+    font-size: 12rem;
+
 }
 .eyem{
-    background: #cd0b0b;
+    background: #a7a69e;
     grid-area:eye;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 0px;
@@ -137,31 +140,44 @@ cursor: pointer;
     justify-content: center;
     align-items: center;
     zoom: 1.4;
-
 }
 .eye {
-
-    width: 150px;
+    
+    /* width: 150px;
     height: 65px;
     border-radius: 50%;
-    background-color: white;
-    border: 5px solid black;
+    background-color: a7a69e;
+    border: 4px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-}
+    position: relative; */
+        width: 150px;
+        height: 65px;
+        border-radius: 100%;
+        background-color: #a7a69e;
+        border: 4px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        background-image: url('eye-shader-sclera-map.png');
+        background-size: cover;
+        background-position: center;
+    }
 
 .pupil {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     position: absolute;
     transition: all 0.1s ease;
+
 }
 .tch{
-    background: #0b0bcd;
+    background: #a7a69e;
     grid-area:tch;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 0px;
@@ -169,15 +185,64 @@ cursor: pointer;
     justify-content: center;
     align-items: center;
     width: auto;
-    font-size: 10rem;
+    font-size: 10.4rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .mail{
-    background: #e8cd00;
+    background: #a7a69e;
     grid-area:mail;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration:underline 3.5px ;
+    font-size: 3rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .random{
-    background: #cb0a0a;
+    background: #a7a69e;
     grid-area:random;
     border-radius: 10px;
+
+}
+.carer{
+    font-size: 2.8rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 50px;
+}
+.social{
+    font-size: 1.5rem;
+    margin-top: 370px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 10px;
+}
+.lanks{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline
+}
+.smst{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+.instagram{
+
+}
+.github{
+
+}
+.linkedin{
+
+}
+#canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height: 40px;
 }

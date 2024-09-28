@@ -290,11 +290,10 @@ main{
     cursor: pointer;
 }
 #content3{
-    background: rgb(17, 0, 255);
     grid-area:content3 ;
     border-radius: 10px;
     display: flexbox;
-    background-color: #eceded;
+    background-color: #a7a69e   ;
     border-radius: 10px;
 }
 .explain{
