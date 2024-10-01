@@ -1,6 +1,6 @@
 body{
-    background-color:black;
     overflow: hidden;
+    background-color: black;
 }
 
 .all{
@@ -248,11 +248,13 @@ cursor: pointer;
 }
 @media only screen and (max-width:1143.20px) {
     body{
-        background-color:black;
+        background-color: black;
         overflow-y:auto;
         margin: 15px;
     }
-    
+    .main{
+        background-color: #a7a69e;
+    }
     .all{
         display: grid;
         height: 100vh;
