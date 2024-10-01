@@ -128,7 +128,7 @@ cursor: pointer;
     justify-content: center;
     align-items: end;
     width: auto;
-    font-size: 12rem;
+    font-size: 11rem;
 
 }
 .eyem{
@@ -185,7 +185,7 @@ cursor: pointer;
     justify-content: center;
     align-items: center;
     width: auto;
-    font-size: 10.4rem;
+    font-size: 9.4rem;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .mail{
@@ -195,7 +195,7 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration:underline 3.5px ;
+    text-decoration:dotted 3.5px !important; 
     font-size: 3rem;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -245,4 +245,137 @@ cursor: pointer;
     align-items: center;
     width:40px;
     height: 40px;
+}
+@media only screen and (max-width:1143.20px) {
+    body{
+        background-color:black;
+        overflow-y:auto;
+        margin: 15px;
+    }
+    
+    .all{
+        display: grid;
+        height: 100vh;
+        grid-gap: 11px;
+        grid-template-columns:1fr;
+        grid-template-rows: auto 0.7fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        " navt "
+        "main" 
+        " random"  
+        "mail"
+        ;
+    }
+    .navt{
+        background: #a7a69e;
+        grid-area:navt;
+        justify-content: space-between;
+        display: flex;
+       border-radius: 10px;
+       width: auto;
+       height: 115px;
+       font-size: 1.4rem;
+    }
+    .afeef{
+        font-size: 1.4rem;
+    }
+    .carer{
+        font-size: 4.8rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-top: 50px;
+    }
+    .social{
+        font-size: 2.9rem;
+        margin-top: 360px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-left: 10px;
+    }
+    .mail{
+        background: #a7a69e;
+        grid-area:mail;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration:underline 3.5px ;
+        font-size: 4rem;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
