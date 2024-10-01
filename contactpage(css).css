@@ -287,13 +287,11 @@ cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         margin-top: 50px;
     }
     .social{
         font-size: 2.9rem;
         margin-top: 360px;
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         margin-left: 10px;
     }
     .mail{
@@ -305,7 +303,6 @@ cursor: pointer;
         align-items: center;
         text-decoration:underline 3.5px ;
         font-size: 4rem;
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
 
