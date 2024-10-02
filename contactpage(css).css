@@ -260,7 +260,7 @@ cursor: pointer;
         height: 100vh;
         grid-gap: 11px;
         grid-template-columns:1fr;
-        grid-template-rows: auto 0.7fr 0.5fr 0.1fr;
+        grid-template-rows: 0.01fr 0.7fr 0.5fr 0.1fr;
         grid-template-areas: 
         " navt "
         "main" 
