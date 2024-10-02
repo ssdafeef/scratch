@@ -107,6 +107,7 @@ cursor: pointer;
 }
 .main{
     grid-area:main;
+    background-color: #a7a69e;
     border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
