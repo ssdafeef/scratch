@@ -249,7 +249,7 @@ cursor: pointer;
 @media only screen and (max-width:1143.20px) {
     body{
         background-color: black;
-        overflow-y:auto;
+        overflow-y:none;
         margin: 15px;
     }
     .main{
@@ -260,7 +260,7 @@ cursor: pointer;
         height: 100vh;
         grid-gap: 11px;
         grid-template-columns:1fr;
-        grid-template-rows: 0.01fr 0.7fr 0.5fr 0.1fr;
+        grid-template-rows: 0.01fr 0.7fr 0.5fr 0.2fr;
         grid-template-areas: 
         " navt "
         "main" 
