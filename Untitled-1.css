@@ -75,6 +75,75 @@ body{
     align-items: center;
     justify-content: space-around;
 } 
+.three > * {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .three > *:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 1.8px;
+    background-color: #000;
+    transition: all 0.3s ease;
+  }
+  
+  .three > *:hover:after {
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+    transition: all 0.5s ease;
+  }
+  
+  .three > *:hover:after {
+    animation: underline 0.4s forwards;
+  }
+  
+  @keyframes underline {
+    0% {
+      width: 0%;
+      left: 0;
+      transform: translateX(0);
+    }
+    50% {
+      width: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    100% {
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+@keyframes underline-reverse {
+    0% {
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    50% {
+      width: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    100% {
+      width: 0%;
+      left: 0;
+      transform: translateX(0);
+    }
+}
+
+.three > *:not(:hover):after {
+    animation: underline-reverse 1s forwards;
+}
+
+
 .projects{
     display: flex;
     width: auto;
@@ -83,6 +152,7 @@ body{
 .projects:hover{
     cursor: pointer;
 }
+
 .about{
     display: flex;
     width: auto;
@@ -104,7 +174,6 @@ body{
 }
 .cnt:hover{
     cursor: pointer;
-    
 }
 main{
     background: #a7a69e;
@@ -325,7 +394,6 @@ main{
         }
     }
 #content4{
-    background: rgb(17, 0, 255);
     grid-area:content4 ;
     border-radius: 10px;
     background-color: #a7a69e;
@@ -333,6 +401,7 @@ main{
     position:relative;
 
 }
+
 .txt2{
     display: flex;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
@@ -387,6 +456,7 @@ footer{
 }
 .int:hover{
     cursor: pointer;
+    text-decoration: underline;
 }
 .git{
     display: flex;
@@ -399,6 +469,7 @@ footer{
 }
 .git:hover{
     cursor: pointer;
+    text-decoration: underline;
 }
 .lind{
     display: flex;
@@ -411,6 +482,7 @@ footer{
 }
 .lind:hover{
     cursor: pointer;
+    text-decoration: underline;
 }
 .fluid-trail {
     position: absolute;
@@ -714,6 +786,7 @@ footer{
     }
     .int:hover{
         cursor: pointer;
+        
     }
     .git{
         display: flex;

@@ -234,11 +234,20 @@ cursor: pointer;
 .instagram{
 
 }
+.instagram:hover{
+    cursor: pointer;
+}
 .github{
 
 }
+.github:hover{
+    cursor: pointer;
+}
 .linkedin{
 
+}
+.linkedin:hover{
+    cursor: pointer;
 }
 #canvas {
     display: flex;
@@ -247,6 +256,30 @@ cursor: pointer;
     width:40px;
     height: 40px;
 }
+.fluid-trail {
+    position: absolute;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    border-radius: 50%;
+    pointer-events: none;
+    animation: fluidFade 2.5s ease-out forwards;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1), 0 0 40px rgba(255, 255, 255, 0.05);
+    mix-blend-mode: overlay;
+}
+
+@keyframes fluidFade {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }}
+.nlyscr{
+    opacity: 0;
+    }
+
+    
 @media only screen and (max-width:1143.20px) {
     body{
         background-color: black;
@@ -302,7 +335,6 @@ cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
-        text-decoration:underline 3.5px ;
         font-size: 4rem;
         font-family:cursive;
     }
