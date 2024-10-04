@@ -27,10 +27,31 @@ body{
    width: auto;
    height: 70px;
 }
+.prev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prev-btn {
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 1.9rem;
+    color:black;
+  }
+  
+  .prev-btn:hover {
+    color: rgb(255, 255, 255);
+  }
 .afeef {
     display: flex;
     border-radius: 10px;
-    margin-left: 2%;
+    margin-right: auto;
     width: auto;
     height: auto;
     justify-content: center;
