@@ -277,6 +277,7 @@ main{
     object-fit: cover; 
     border-radius: 10px;
         object-position: 0% 13%;
+
 }
 #head-space {
     transition: transform 0.2s; /* add a smooth transition effect */
@@ -369,10 +370,12 @@ main{
     display: flex;
     border-radius: 10px;
     text-align: center;
-    margin-top: -40px;
-    width: auto;
+    justify-content: center;
+    margin-top: -60px;
+    width: 400px;
     height: auto;
     font-size: 1.4rem;
+    margin-left: 20px;
     padding: 2px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     transform: translateY(3px);
@@ -643,9 +646,9 @@ footer{
     .about:hover{
         cursor: pointer;}
         #head-space {
-            transition: 0; /* add a smooth transition effect */
-            transform-style: preserve-3d; /* enable 3D transformations */
-          }
+  transition: transform 0.1s;
+  transform-style: preserve-3d;
+}
           
           #head-space:hover {
             transform: translateZ(0px); /* move the image 20px forward on hover */

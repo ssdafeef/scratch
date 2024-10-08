@@ -18,7 +18,7 @@ document.addEventListener('mousemove', function(e) {
         fluidTrail.remove();const headSpace = document.getElementById('head-space');
 
 document.addEventListener('mousemove', (e) => {
-  const mouseX = e.clientX;
+  const mouseX = e.clientX;;
   const mouseY = e.clientY;
   const centerX = window.innerWidth / 2;
   const centerY = window.innerHeight / 2;
@@ -31,3 +31,37 @@ document.addEventListener('mousemove', (e) => {
 });     
     }, 2500);
 });
+// Get the #head-space element
+const headSpace = document.getElementById('head-space');
+
+// Check if the device supports the DeviceMotion API
+if (window.DeviceMotionEvent) {
+  // Set the initial values for the rotation
+  let x = 0;
+  let y = 0;
+
+  // Add an event listener for the device motion
+  window.addEventListener('devicemotion', (event) => {
+    // Get the acceleration values
+    const acceleration = event.accelerationIncludingGravity;
+
+    // Calculate the rotation based on the acceleration values
+    x = acceleration.x * 10;
+    y = acceleration.y * 10;
+
+    // Update the transform of the #head-space element
+    headSpace.style.transform = `rotateX(${y}deg) rotateY(${x}deg)`;
+  });
+} else {
+  console.log('DeviceMotion API is not supported');
+}
+function animate() {
+  requestAnimationFrame(animate);
+  // Update the transform of the #head-space element
+  headSpace.style.transform = `rotateX(${y}deg) rotateY(${x}deg)`;
+}
+
+animate();
+// Calculate the rotation based on the acceleration values
+x = Math.max(-30, Math.min(30, acceleration.x * 10));
+y = Math.max(-30, Math.min(30, acceleration.y * 10));
