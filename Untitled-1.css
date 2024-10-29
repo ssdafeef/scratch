@@ -369,15 +369,15 @@ main{
 .explain{
     display: flex;
     border-radius: 10px;
-    text-align: center;
+    text-align:start;
     justify-content: center;
-    margin-top: -60px;
+    margin-top: -30px;
     width: 400px;
     height: auto;
     font-size: 1.4rem;
     margin-left: 20px;
     padding: 2px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transform: translateY(3px);
     transition: transform 0.5s;
   }
