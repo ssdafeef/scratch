@@ -266,7 +266,7 @@ cursor: pointer;
     align-items: center;
     text-decoration:dotted 3.5px !important; 
     font-size: 3rem;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:fantasy;
 }
 .random{
     background: #a7a69e;
@@ -300,19 +300,20 @@ cursor: pointer;
     margin-top: 15px;
 }
 .instagram{
+display: flex;
 
 }
 .instagram:hover{
     cursor: pointer;
 }
 .github{
-
+display: flex;
 }
 .github:hover{
     cursor: pointer;
 }
 .linkedin{
-
+display: flex;
 }
 .linkedin:hover{
     cursor: pointer;
@@ -386,10 +387,14 @@ cursor: pointer;
     .carer{
         font-size: 4.8rem;
         text-align: center;
+        margin-left: 25px;
+        width: 900px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 50px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-bottom: auto;
     }
     .social{
         font-size: 2.9rem;
@@ -405,78 +410,8 @@ cursor: pointer;
         align-items: center;
         font-size: 4rem;
         font-family:cursive;
+        padding-top: 40px  ;
+        padding-bottom: 40px;
+
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

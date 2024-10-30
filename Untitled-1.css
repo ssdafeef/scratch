@@ -109,7 +109,7 @@ body{
       left: 0;
       transform: translateX(0);
     }
-    50% {
+    50% {+
       width: 0;
       left: 50%;
       transform: translateX(-50%);
@@ -775,8 +775,8 @@ footer{
         border-radius: 10px;
         width: auto;
         height:auto;
-        font-size: 2rem;
-        margin-top: -1.2%;
+        font-size: 5rem;
+        margin-top: -3%;
         margin-right: 3.4%;
         margin-left: auto;
     }
@@ -788,10 +788,11 @@ footer{
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
         margin-top:14% ;
         margin-left: 3%;
-        border-radius: 10px;
+        margin-bottom: 1px;
+        border-radius: 9px;
         width: auto;
         height:auto;
-        font-size: 5rem;
+        font-size: 9rem;
     }
     .int{
         display: flex;
@@ -836,13 +837,14 @@ footer{
     height: auto;
 }
 .explain{
-    font-size: 3rem;
+    font-size: 2.9rem;
     margin-bottom: 15px;
+    width: auto;
 }
 .explain{
     display: flex;
     padding: 2px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, bold;
     transform: translateY(0px);
     transition: transform 0.5s;
   }

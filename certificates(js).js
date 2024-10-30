@@ -26,8 +26,6 @@ function loadShow(){
     }
     
 }
-
-
 loadShow();
 
 window.addEventListener('wheel', function(event) {
@@ -63,7 +61,8 @@ document.addEventListener('mousemove', function(e) {
     
     // Random size for variation in fluid effect
     const size = Math.random() * 25 + 10;
-    fluidTrail.style.width = `${size}px`;
+    
+      luidTrail.style.width = `${size}px`;
     fluidTrail.style.height = `${size}px`;
     
     // Position the fluid trail at the cursor
