@@ -869,9 +869,10 @@ footer{
     margin-bottom: 20px;
   }
 }
+/* this is for opera gx */
 /* min height for some reason is fucking 864 */
 /* and min width is 1495 */
-@media only screen and (min-width:1496px ) {
+@media only screen and (min-width:1529px ) {
     body{
         background-color: rgb(0, 0, 0);
        overflow: hidden;
@@ -980,3 +981,5 @@ footer{
         text-decoration: underline;
     }
 }
+/* for edge */
+/* @media only screen and (min-width:1529px ) {} */
