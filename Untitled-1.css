@@ -547,7 +547,7 @@ footer{
       }
      
 
-@media only screen and (max-width:1080) {
+@media only screen and (max-width:1080px) {
     body{
         overflow-y: auto;
         margin-left:1.5% ;
