@@ -1,4 +1,25 @@
+const backspace = document.getElementById('backspace');
 
+document.addEventListener('mousemove', (e) => {
+    // Get the height of the window
+    const windowHeight = window.innerHeight;
+
+    // Calculate the middle range of the window
+    const middleStart = windowHeight / 3; // Start of middle third
+    const middleEnd = (windowHeight / 3) * 2; // End of middle third
+
+    // Update the position of the backspace element to follow the mouse
+    backspace.style.left = `${e.pageX}px`;
+    backspace.style.top = `${e.pageY}px`;
+    backspace.style.position = 'absolute'; // Ensure the position is absolute
+
+    // Check if the mouse is in the middle part of the window
+    if (e.pageY >= middleStart && e.pageY <= middleEnd) {
+        backspace.style.display = 'none'; // Hide the backspace element
+    } else {
+        backspace.style.display = 'block'; // Show the backspace element
+    }
+});
 let items = document.querySelectorAll('.slider .item');
 let active = 3;
 
