@@ -84,7 +84,10 @@ body {
     transition: opacity 0.2s;
     z-index: 3; /* Ensure it appears above other elements */
 }
-
+#note{
+    align-self: top;
+    align-content:first baseline;
+}
 
 
 .fluid-trail {
