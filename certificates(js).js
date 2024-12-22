@@ -20,6 +20,7 @@ document.addEventListener('mousemove', (e) => {
         backspace.style.display = 'block'; // Show the backspace element
     }
 });
+
 let items = document.querySelectorAll('.slider .item');
 let active = 3;
 

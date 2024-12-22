@@ -71,8 +71,8 @@ body {
     position: absolute;
     top: 20px; /* Adjust the distance from the top as needed */
     left: 5%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for centering */
-    color: #fff;
+    transform: translateX(-50%); 
+    color: #ffffff;
     background-color: #797871;
     border: none;
     padding: 10px 20px 10px 20px;
@@ -109,6 +109,24 @@ body {
         transform: scale(2.5);
         opacity: 0;
     }
+}
+#backspace1 {
+    position: absolute;
+    top: 0px; /* Adjust the distance from the top as needed */
+    left: 0px; /* Center horizontally */
+    transform: translateX(-0%); 
+    color: #ffffff;
+    background-color: #797871;
+    border: none;
+    padding: 0px 0px 0px 0px;
+    margin-left: 20px;
+    border-radius: 15px;
+    font-size: xx-large;
+    font-family: monospace;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.2s;
+    z-index: 3; /* Ensure it appears above other elements */
 }
 @media only screen and (max-width:1080px) {
     .slider{
@@ -173,4 +191,41 @@ body {
             opacity: 0;
         }
     }
+
+#backspace {
+    position: absolute;
+    top: 20px; /* Adjust the distance from the top as needed */
+    left: 5%; /* Center horizontally */
+    transform: translateX(-0%); 
+    color: #ff0000;
+    background-color: #797871;
+    border: none;
+    padding: 0px 20px 10px 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    font-size: xx-large;
+    font-family: monospace;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.2s;
+    z-index: 3; /* Ensure it appears above other elements */
+}
+#backspace1 {
+    position: absolute;
+    top: 20px; /* Adjust the distance from the top as needed */
+    left: 5%; /* Center horizontally */
+    transform: translateX(-0%); 
+    color: #ffffff;
+    background-color: #797871;
+    border: none;
+    padding: 0px 20px 10px 20px;
+    margin-left: 0px;
+    border-radius: 10px;
+    font-size: xx-large;
+    font-family: monospace;
+    font-weight: bold;
+    opacity: 01;
+    transition: opacity 0.2s;
+    z-index: 3; /* Ensure it appears above other elements */
+}
 }
