@@ -21,7 +21,8 @@ document.addEventListener('mousemove', (e) => {
     }
 });
 
-let items = document.querySelectorAll('.slider .item1');
+let items = document.querySelectorAll('.slider .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8');
+
 let active = 3;
 
 function loadShow(){
