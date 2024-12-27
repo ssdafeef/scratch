@@ -21,7 +21,7 @@ document.addEventListener('mousemove', (e) => {
     }
 });
 
-let items = document.querySelectorAll('.slider .item');
+let items = document.querySelectorAll('.slider .item1');
 let active = 3;
 
 function loadShow(){
